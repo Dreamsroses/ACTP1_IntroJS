@@ -62,5 +62,43 @@
 
       </fieldset>
     </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+    $("h1").css("color", "red");
+    $(".section-1").css("background-color", "yellow");
+    
+    var numero = parseInt($(".counter").html()) + 10;
+    $(".counter").html(numero);
+
+    // solucion 2 agregar 10 numeros
+    // $(".counter").html(Number($(".counter").html()) + 10);
+
+    //solucion 3 agregar 10 numeros
+      // var numero = 10;
+      //  $(".counter").html(numero);
+
+    //solucion 1 accion click
+       $("#row-3").animate({
+          backgroundColor: "gray",
+          color: "blue"
+       }, 3000);
+
+    //solucion 2 accion click
+      // $("#row-3").click(function(){
+      //   console.log("Hice un click");
+      //   $("#row-3").css("background-color", "gray");
+      //   $("#row-3").css("transition", "5s");
+      // });
+
+  var size = $(".section-1 h1").css("font-size");
+    $(".section-1 h1").css("font-size", parseInt(size)* 2);
+
+
+    $(".row").last().css("background-color", "red").css("color", "red");
+    </script>
+
   </body>
 </html>
